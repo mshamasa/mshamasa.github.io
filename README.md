@@ -11,7 +11,7 @@ Now how will I maintain this simple `index.html` as my blog may grow. No problem
 Ugghhh I'm so laaazzzyyy.
 
 So I tried a couple of things.
-1. Added `parcel` to get a dev enviornment going (btw first time using `parcel`).
+1. Added `parcel` to get a dev environment going (btw first time using `parcel`).
 2. Wait...can I do this in `React`?
 
 Now...where here.
@@ -21,7 +21,7 @@ Now...where here.
 ## How this project works
 
 1. `parcel` builds the project for `dev` and `"production"`
-    1. `yarn dev` will do the normal and you can open localhost:1234
+    1. `yarn dev` will do the normal and you can open [localhost:1234](http://localhost:1234)
 2. For `yarn production` I wrote scripts in the `package.json`
     1. first it will clean up `dist/` with `yarn clean_dist`
     2. second it will build with `--public-url .` to make sure the src and links for files is set correctly in `index.html`
