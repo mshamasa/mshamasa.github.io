@@ -1,6 +1,93 @@
 <style>
-    .hello {
-        background: red;
+    body {
+        background: linear-gradient(
+            to bottom,
+            #e91e63,
+            #9c27b0,
+            #2196f3,
+            #ff5722
+        );
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        font-size: 72.5%;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 3%;
+        padding: 1%;
+        border-radius: 5px;
+        background: #d8d2d2;
+        box-shadow: 0 5px 5px;
+    }
+
+    .container section p {
+        padding: 0;
+        margin: 0;
+        font-size: 1em;
     }
 </style>
-<div class="hello">Hello world</div>
+
+<div class="container">
+    <section>
+        <header>
+            <h2>Mike Shamasa Blog @ mshamasa@gmail.com</h2>
+            <p>
+                Hey welcome to my cheap ass free blog. Could I have used a free
+                service? Yeah, so. Anyway these are my random thoughts I would
+                like to share as a software engineer, I hope it helps you.:w
+            </p>
+        </header>
+    </section>
+    <section>
+        <h2>Fast.ai Machine Learning for Coders</h2>
+        <article>
+            <h2>10/27/20: Fast.ai Lesson 1</h2>
+            <p>
+                First impressions, fantastic! Even if you don’t plan on writing
+                code, going through this material and learning about Machine
+                Learning (ML); is worth it. It gives you an insight into how the
+                magic happens, which boils down to simple mathematics, depending
+                on the model you use. Imagine (1 + 1) just being done 1 million
+                times, somewhere along those lines. But the best part is
+                learning how they are trained. In lesson 1 you will learn how a
+                model is trained like an Image classifier, you build a cat one
+                yourself! You also learn about the many layers in a model and
+                how each layer builds on top of each other. Finally I think the
+                most important takeaway was how to use validation sets and test
+                sets. The insight into testing will not only help you as an
+                individual learning but as an organization as well.
+            </p>
+            <p>
+                Downside right now? Documentation, but just ever so slightly.
+                Links lead to different pages and content, but I understand this
+                is constantly being updated, so I can’t really hold it against
+                them. Especially if they are giving this away for free.
+            </p>
+        </article>
+    </section>
+    <section>
+        <h2>Neovim</h2>
+        <article>
+            <h2>08/01/20: Why I'm using Neovim</h2>
+            <p>
+                Well it started out like any “why” starts out. Either to impress
+                someone (married...so nope), boredom (yup this one). It took a
+                little while to get used to the keys and commands, but honestly
+                you don’t need to know that many. If anything I would recommend
+                making the switch just to show how little you need in terms of
+                what an IDE comes with. What are the essentials? Copy and Paste
+                Search and Replace Code Formatting (I’ll never quit you
+                Prettier!) Git merge conflicts (I still use VSCode for issue)
+                After reading and watching so many videos on how to customize
+                Neovim to get all the cool features I had on VSCode I learned
+                why VIM came about. The logic of you should only be editing
+                files, was an interesting idea. After having written so many
+                lines of code, I noticed that I tend to edit files more often
+                now then before. Down side? I end a lot of my emails now with
+                jjjjkkk trying to move up or down.:w
+            </p>
+        </article>
+    </section>
+</div>
