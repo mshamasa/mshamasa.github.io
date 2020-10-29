@@ -1,6 +1,14 @@
 {
   "data": [
     {
+      "title": "Fast.ai Lesson 2",
+      "date": "10/28/20",
+      "text": [
+        "Takeaway: Here we learn more about models, how to augment data to help the model get better. In the case of images we can crop or stretch them and use those images to train the model further. Then we can use our trained model to clean up invalid data, like non-bear images for a bear model (this is a cool test to see how well it’s doing). We also learn a lot about the down sides of ML, like training a model on pictures from the internet is not the same as images from a camera. Making sure you don’t build a biased model that will keep feeding on said biases. We also built a bear model that can tell the difference between 3 types of bears (grizzly, black and teddy).",
+        "Downside: Deploying the model online instructions are unclear. Following the instructions and it didn’t really work but I understand the idea behind it so I didn’t care too much."
+      ]
+    },
+    {
       "title": "Fast.ai Lesson 1",
       "date": "10/27/20",
       "text": [

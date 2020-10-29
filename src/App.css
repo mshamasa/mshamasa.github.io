@@ -1,16 +1,45 @@
+body {
+  background: linear-gradient(135deg, #e91e63, #9c27b0, #2196f3);
+  background-repeat: no-repeat;
+  font-family: 'Lucida Console', Monaco, monospace;
+}
+
 .container {
   font-size: 72.5%;
   display: flex;
-  flex-direction: column;
   height: 100vh;
-  margin: 3%;
-  padding: 1%;
+  margin: 3em;
+  padding: 1em;
   border-radius: 5px;
-  background: #d8d2d2;
+  background: #ffffffb5;
   box-shadow: 0 5px 5px;
 }
 
-.container section p {
+.container .about-me {
+  width: 12.5%;
+  border-right: 1px solid black;
+}
+
+.container .about-me .about-me-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container .about-me .about-me-details > span {
+  padding: calc(1em / 2);
+}
+
+.container .about-me .about-me-details > span svg {
+  color: #e91e63;
+}
+
+.container .sections {
+  margin: 0 1em;
+  flex: 2;
+}
+
+.container .sections section p {
   padding: 0;
   margin: 0;
   font-size: 1em;

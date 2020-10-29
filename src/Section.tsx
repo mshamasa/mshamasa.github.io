@@ -6,7 +6,9 @@ interface ISection {
   text: Array<string>;
 }
 
-export default function Section({ title, date, text }: ISection) {
+export default function Section(props: ISection): React.ReactElement {
+  const { title, date, text } = props;
+
   return (
     <section>
       <h2>{`${date} ${title}`}</h2>
