@@ -20,13 +20,16 @@ Now...where here.
 
 ## How this project works
 
-1. `parcel` builds the project for `dev` and `"production"`
-    1. `yarn dev` will do the normal and you can open [localhost:1234](http://localhost:1234)
+1. `parcel` builds the project for `dev` and `"production"` with the entry filed being `src/index.html`
+    1. `yarn dev` will build and watch for changes, open [localhost:1234](http://localhost:1234)
 2. For `yarn production` I wrote scripts in the `package.json`
     1. first it will clean up `dist/` with `yarn clean_dist`
-    2. second it will build with `--public-url .` to make sure the src and links for files is set correctly in `index.html`
+    2. second it will build with `parcel build --public-url . src/index.html`
+        1. The `--public-url` means our `<link href= && <script src=` build to whatever destination you want.
+        2. `--public-url .` means current working directory for me it's the `root` where all my files will be
     3. third it will clean up our `root` direction and remove all previously build files
     4. finally it will copy the content of `dist` into the root folder
+3. Now all you have to do is push up the changes and github pages will pick up the new index.html
     
 That's it. You can develop however you want in the `src/` folder add/remove directories etc
 
