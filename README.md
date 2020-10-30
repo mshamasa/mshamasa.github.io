@@ -2,7 +2,7 @@
 Hi this is just a random blog I'm putting up so I can share some thoughts and just mess around with stuff.
 
 ## Well now...about this project:
-At first I just wanted to get a blog going,github pages to the rescue! Fast and easy setup.
+At first I just wanted to get a blog going, github pages to the rescue! Fast and easy setup.
 Now how will I maintain this simple `index.html` as my blog may grow. No problem I'm not going to write a lot. Oh man...I'm writing a lot...ok ok no problem we’ll just add sections and text manually...
 
 
@@ -24,9 +24,10 @@ Now...where here.
     1. `yarn dev` will build and watch for changes, open [localhost:1234](http://localhost:1234)
 2. For `yarn production` I wrote scripts in the `package.json`
     1. first it will clean up `dist/` with `yarn clean_dist`
-    2. second it will build with `parcel build --public-url . src/index.html`
-        1. The `--public-url` means our `<link href= && <script src=` build to whatever destination you want.
-        2. `--public-url .` means current working directory for me it's the `root` where all my files will be
+    2. by default `parcel build src/index.html` will create a `dist` folder and place everything there
+        1. I needed to build into root directory, `parcel build --public-url . src/index.html`
+        2. The `--public-url` means our `<link href= && <script src=` build to whatever destination you want.
+        3. `--public-url .` means current working directory for me it's the `root` where all my files will be
     3. third it will clean up our `root` direction and remove all previously build files
     4. finally it will copy the content of `dist` into the root folder
 3. Now all you have to do is push up the changes and github pages will pick up the new index.html
