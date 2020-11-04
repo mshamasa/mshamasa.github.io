@@ -34,5 +34,3 @@ Now...where here.
     
 That's it. You can develop however you want in the `src/` folder add/remove directories etc
 
-## TODO:
- - [ ] write a blog post about this.
