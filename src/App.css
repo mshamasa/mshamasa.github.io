@@ -7,17 +7,16 @@ body {
 .container {
   font-size: 72.5%;
   display: flex;
-  height: 100vh;
-  margin: 3em;
+  padding: 1em;
+}
+
+.container .about-me {
+  flex: 1;
+  margin: 1em 0;
   padding: 1em;
   border-radius: 5px;
   background: #ffffffb5;
   box-shadow: 0 5px 5px;
-}
-
-.container .about-me {
-  width: 12.5%;
-  border-right: 1px solid black;
 }
 
 .container .about-me .about-me-details {
@@ -35,8 +34,15 @@ body {
 }
 
 .container .sections {
-  margin: 0 1em;
-  flex: 2;
+  flex: 8;
+}
+
+.container .sections .section {
+  padding: 1em;
+  margin: 1em;
+  border-radius: 5px;
+  background: #ffffffb5;
+  box-shadow: 0 5px 5px;
 }
 
 .container .sections section p {

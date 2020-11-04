@@ -10,11 +10,11 @@ export default function Section(props: ISection): React.ReactElement {
   const { title, date, text } = props;
 
   return (
-    <section>
+    <section className="section">
       <h2>{`${date} ${title}`}</h2>
       <article>
         {text.map((t: string) => (
-          <p>{t}</p>
+          <p key={t}>{t}</p>
         ))}
       </article>
     </section>

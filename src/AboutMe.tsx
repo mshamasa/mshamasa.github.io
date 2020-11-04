@@ -10,7 +10,6 @@ export default function AboutMe(): React.ReactElement {
     <div className="about-me">
       <h2>About Me</h2>
       <div className="about-me-details">
-        <span>Mike Shamasa</span>
         <span>
           <a
             rel="noreferrer"
