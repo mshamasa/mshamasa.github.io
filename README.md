@@ -14,7 +14,7 @@ So I tried a couple of things.
 1. Added `parcel` to get a dev environment going (btw first time using `parcel`).
 2. Wait...can I do this in `React`?
 
-Now...where here.
+Now...we're here.
 
 ![](https://media.giphy.com/media/NGlCb2KWvKe4g/giphy.gif)
 
