@@ -14,8 +14,8 @@ export default function TwitterIcon({
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
-      width="14"
-      height="14"
+      width={width}
+      height={height}
     >
       <path
         fill="currentColor"

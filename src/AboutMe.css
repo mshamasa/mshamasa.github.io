@@ -1,0 +1,22 @@
+.about-me {
+  flex: 1;
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 5px;
+  background: #ffffffb5;
+  box-shadow: 0 5px 5px;
+}
+
+.about-me .about-me-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-me .about-me-details > span {
+  padding: calc(1em / 2);
+}
+
+.about-me .about-me-details > span svg {
+  color: #e91e63;
+}

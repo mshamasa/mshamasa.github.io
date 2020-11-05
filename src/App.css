@@ -10,43 +10,6 @@ body {
   padding: 1em;
 }
 
-.container .about-me {
-  flex: 1;
-  margin: 1em 0;
-  padding: 1em;
-  border-radius: 5px;
-  background: #ffffffb5;
-  box-shadow: 0 5px 5px;
-}
-
-.container .about-me .about-me-details {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.container .about-me .about-me-details > span {
-  padding: calc(1em / 2);
-}
-
-.container .about-me .about-me-details > span svg {
-  color: #e91e63;
-}
-
 .container .sections {
   flex: 8;
-}
-
-.container .sections .section {
-  padding: 1em;
-  margin: 1em;
-  border-radius: 5px;
-  background: #ffffffb5;
-  box-shadow: 0 5px 5px;
-}
-
-.container .sections section p {
-  padding: 0;
-  margin: 0;
-  font-size: 1em;
 }

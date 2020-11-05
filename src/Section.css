@@ -1,0 +1,13 @@
+.section {
+  padding: 1em;
+  margin: 1em;
+  border-radius: 5px;
+  background: #ffffffb5;
+  box-shadow: 0 5px 5px;
+}
+
+.sections section p {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+}

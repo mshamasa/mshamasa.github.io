@@ -5,6 +5,8 @@ import TwitterIcon from './Icons/TwitterIcon';
 import LinkedInIcon from './Icons/LinkedInIcon';
 import GithubIcon from './Icons/GithubIcon';
 
+import './AboutMe.css';
+
 export default function AboutMe(): React.ReactElement {
   return (
     <div className="about-me">
@@ -16,7 +18,7 @@ export default function AboutMe(): React.ReactElement {
             target="_blank"
             href="https://www.google.com/maps/place/San+Francisco,+CA"
           >
-            <HomeIcon />
+            <HomeIcon width={24} height={24} />
           </a>
         </span>
         <span>
@@ -25,7 +27,7 @@ export default function AboutMe(): React.ReactElement {
             target="_blank"
             href="https://twitter.com/mshamasa"
           >
-            <TwitterIcon />
+            <TwitterIcon width={24} height={24} />
           </a>
         </span>
         <span>
@@ -34,7 +36,7 @@ export default function AboutMe(): React.ReactElement {
             target="_blank"
             href="https://www.linkedin.com/in/mshamasa"
           >
-            <LinkedInIcon />
+            <LinkedInIcon width={24} height={24} />
           </a>
         </span>
         <span>
@@ -43,7 +45,7 @@ export default function AboutMe(): React.ReactElement {
             target="_blank"
             href="https://www.github.com/mshamasa"
           >
-            <GithubIcon />
+            <GithubIcon width={24} height={24} />
           </a>
         </span>
       </div>
