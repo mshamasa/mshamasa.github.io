@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Section.css';
 
-interface ISection {
+export interface ISection {
   title: string;
   date: string;
   text: Array<string>;
