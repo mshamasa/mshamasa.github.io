@@ -22,7 +22,7 @@ function App({ articles = [], loading = true }: IApp): ReactElement {
 
   useEffect(() => {
     fetchData().then((d) => setData({ articles: d, loading: false }));
-  });
+  }, []);
 
   return (
     <div className="container">
