@@ -1,0 +1,15 @@
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 50%;
+}
+
+.loading .loading-text {
+  font-size: 2em;
+  color: #fff;
+}
+
+.loading .loading-img {
+  opacity: 0.8;
+}

@@ -2,6 +2,7 @@ import React, { ReactElement, useState, useEffect } from 'react';
 
 import Section, { ISection } from './Section';
 import AboutMe from './AboutMe';
+import Loading from './Loading';
 
 import './App.css';
 
@@ -28,7 +29,7 @@ function App({ articles = [], loading = true }: IApp): ReactElement {
     <div className="container">
       <AboutMe />
       <div className={`sections ${data.loading ? 'loading' : ''}`}>
-        {data.loading && <div>Loading...</div>}
+        {data.loading && <Loading />}
         {!data.loading &&
           data.articles.map((s) => (
             <Section
