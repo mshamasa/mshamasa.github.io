@@ -3,18 +3,18 @@ import React, { ReactElement, useState, useEffect } from 'react';
 import Section, { ISection } from './Section';
 import AboutMe from './AboutMe';
 import Loading from './Loading';
+import data from './blog_data.json';
 
 import './App.css';
 
-async function fetchData() {
-  const res = await fetch(
-    'https://blog-function.azurewebsites.net/api/BlogTrigger'
-  );
-  return res.json();
+type Data = Array<ISection>;
+
+async function fetchData(): Promise<Data> {
+  return Promise.resolve(data.data);
 }
 
 interface IApp {
-  articles: Array<ISection>;
+  articles: Data;
   loading: boolean;
 }
 
@@ -22,7 +22,9 @@ function App({ articles = [], loading = true }: IApp): ReactElement {
   const [data, setData] = useState({ articles, loading });
 
   useEffect(() => {
-    fetchData().then((d) => setData({ articles: d, loading: false }));
+    fetchData().then((data) => {
+      setData({ articles: data, loading: false });
+    });
   }, []);
 
   return (
